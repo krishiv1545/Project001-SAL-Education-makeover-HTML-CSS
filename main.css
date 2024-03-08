@@ -1,0 +1,21 @@
+html{
+    font-size:18px
+}
+body{
+    background-color: #030912;
+    color: whitesmoke;
+}
+a{
+    color:aliceblue
+}
+a:visited{
+    color:beige
+}
+a:hover, a:active{
+    color:aquamarine
+}
+table, tr, th, td, caption{
+    border: 1px solid beige;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
