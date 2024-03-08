@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--I wasnt paid to do this just so ya know :3-->
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="creator" content="Krishiv Khambhayata">
+        <meta name="description" content="Admission Form">
+        <title>Admission Form</title>
+        <link rel="icon" href="images/salicon002.png" type="image/png">
+        <link rel="stylesheet" href="cssfiles/main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <section id="top">
+                <h1>SAL EDUCATION</h1>
+            </section>
+            <hr>
+        </header>
+        <main>
+            <p><a href="launch.html"><i>go back</i></a></p>
+            <article id="admission_form">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                    <legend>Admission Form:</legend>
+                        <p>
+                            <label for="fullName">Full Name:</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Eg. Rahul Trivedi" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="emailId">Email Address:</label>
+                            <input type="email" name="emailId" id="emailId" placeholder="xyz@gmail.com" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="phno">Phone Number:</label>
+                            <input type="tel" name="phno" id="phno" placeholder="xxxx-xxx-xxx" autocomplete="on" required pattern="[0-9]{10}">
+                        </p>
+                        <p>
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city" placeholder="Eg. Ahmedabad" autocomplete="on" required>
+                        </p>
+                        <!-- <p>
+                            <label for="course_name">Select Your Course:</label>
+                            <select name="course_name" id="course_name">
+                                <option value="temp010" selected>--Choose your course--</option>
+                                <option value="Engg">Engineering</option>
+                                <option value="MBA">MBA</option>
+                                <option value="Pharma">Pharmacy</option>
+                                <option value="Arch">Architecture</option>
+                            </select>
+                        </p> -->
+                        <p>
+                            <label for="course_name">Select Your Course:</label>
+                            <input type="text" name="course_name" id="course_name" placeholder="--Choose your course--" required list="courseList">
+                            <datalist id="courseList">
+                                <option value="Engineering">
+                                <option value="MBA">
+                                <option value="Pharmacy">
+                                <option value="Architecture">
+                            </datalist>
+                        </p> 
+                        <!--how to add different spec options based on unique course selections?
+                        <p>
+                            <label for="specialisation">Select Specialisation:</label>
+                            <input type="text" name="city" id="city" autocomplete="on" required>
+                        </p>-->
+                        <p><!--should only show if chosen course is engg-->
+                            <label for="instituteChoice">Preferred Universities:</label>
+                            <input type="checkbox" name="instituteChoice" id="saliter" value="SALITER">
+                            <label for="saliter">SALITER</label>
+                            <input type="checkbox" name="instituteChoice" id="seti" value="SETI">
+                            <label for="seti">SETI</label>
+                            <input type="checkbox" name="instituteChoice" id="sce" value="SCE">
+                            <label for="sce">SCE</label>
+                        </p>
+                        <p>
+                            <label for="admissionMethod">Medium Of Admission:</label>
+                            <input type="radio" name="admissionMethod" id="acpc" value="ACPC">
+                            <label for="acpc">ACPC</label>
+                            <input type="radio" name="admissionMethod" id="drtadm" value="DrtAdm">
+                            <label for="drtadm">Direct Admission</label>
+                        </p>
+                        <p>
+                            <label for="message">Enter a message (optional):</label>
+                            <br>
+                            <textarea name="message" id="message" cols="50" rows="6" placeholder="Type your message here..."></textarea>
+                        </p>
+                        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>  
+                        <button type="reset">Clear Form</button>  
+                    </fieldset>  
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <h3>Reach Us:</h3>
+            <dl>
+                <dt>Address:</dt>
+                    <dd>
+                    <address>
+                        SAL EDUCATION<br>
+                        <abbr title="opposite">Opp.</abbr> Science city,<br>
+                        Sola Bhadaj Road,<br>
+                        Ahmedabad, Gujarat-380060
+                    </address>
+                    </dd>
+                <dt>Ph. No.:</dt>
+                    <dd><a href="tel:+9107967129000">079 - 67129000</a></dd>
+                <dt>Mail ID:</dt>
+                    <dd><a href="info@sal.edu.in" target="_blank">info@sal.edu.in</a></dd>
+                <dt>Original Site Link:</dt>
+                    <dd><a href="https://www.sal.edu.in" target="_blank">www.sal.edu.in</a></dd>
+            </dl>
+            <hr>
+            <nav aria-label="primary-navigation">
+                <p>
+                    <i><a href="#top">Go To Top</a></i>
+                </p>
+            </nav>
+            <aside>
+                <p>
+                    &lt;&nbsp; &copy; <a href="https://www.linkedin.com/in/krishiv1545/" target="_blank">Krishiv Khambhayata</a> &nbsp;&gt;
+                </p>
+            </aside>
+        </footer>
+    </body>
+</html>
+
+<!--
+  ^~^  ((
+ ('Y') ))   (QUACK)
+ /   \// 
+(\|||/) art by hjw
+-->
